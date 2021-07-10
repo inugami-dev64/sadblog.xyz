@@ -28,6 +28,7 @@ gen() {
 
         title=$(grep "title: " $(echo $f) | sed "s/^title: \(.*\)$/\1/g")
         date=$(grep "date: " $(echo $f) | sed "s/^date: \(.*\)$/\1/g")
+
         LINKS="$LINKS<li>$date - <a href=\"$html\">$title<\/a><\/li>\n"
     done
     echo -e $LINKS
@@ -41,10 +42,14 @@ gen() {
 while :; do
     pull=$(git pull origin master 2>/dev/null | grep "Already up to date")
 
-    if [[ -z $pull ]]; then
-        check_template $1 $2
-        gen $1 $2
-    fi
+    #if [[ -z $pull ]]; then
+    check_template $1 $2
+    gen $1 $2
+    #fi
 
     sleep 1m
 done
+
+<li>2021-07-10 - <a href="\/articles\/test\.html">Test article<\/a><\/li>
+<li>2021-07-10 - <a href="\/articles\/hello\.html">Hello Website<\/a><\/li>
+
