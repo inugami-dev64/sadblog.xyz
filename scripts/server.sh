@@ -31,8 +31,6 @@ gen() {
 
         LINKS="$LINKS<li>$date - <a href=\"$html\">$title<\/a><\/li>\n"
     done
-    echo -e $LINKS
-    echo -e $1
 
     # Write the link list to the index file
     sed -e "s/#LIST/$LINKS/g" $1 > index.html
