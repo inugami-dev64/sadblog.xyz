@@ -1,0 +1,97 @@
+body {
+    display: block;
+    background-color: black;
+    padding: 20px;
+}
+
+
+/* All possible text colors and their sizes for uniform look */
+h1 {
+    color: #99ff66; /* Neon green */
+    text-align: center;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+h2 {
+    color: #1ed2ea;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+
+h3 {
+    color: #ec89f1;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+
+h4 {
+    color: #ffcc66;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+a, p, b {
+    font-size: 18px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #0099ff;
+}
+
+
+a:hover {
+    color: #00ffff;
+}
+
+
+p, b, li {
+    color: #ffffff;
+}
+
+
+/* Containers for creating fancy table like layouts */
+.info_box {
+    margin: 10px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.sptable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.col {
+    margin-top: 30px;
+    display: block;
+    width: 50%;
+}
+
+
+/* Special rule to make column contents 100% wide when screen size is below 800px */
+@media screen and (max-width: 800px) {
+    .col {
+        width: 100%;
+    }
+}
+
+
+.col img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
