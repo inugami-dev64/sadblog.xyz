@@ -47,7 +47,3 @@ while :; do
 
     sleep 1m
 done
-
-<li>2021-07-10 - <a href="\/articles\/test\.html">Test article<\/a><\/li>
-<li>2021-07-10 - <a href="\/articles\/hello\.html">Hello Website<\/a><\/li>
-
