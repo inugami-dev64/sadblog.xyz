@@ -32,7 +32,7 @@ gen() {
     # Write the link list to the index file
     LINKS=$(echo -e $LINKS | sort -r -d)
     echo -e $LINKS
-    sed -e "s/#LIST/$LINKS/g" $1 > index.html
+    sed -e "s|#LIST|$LINKS|g" $1 > index.html
 }
 
 
