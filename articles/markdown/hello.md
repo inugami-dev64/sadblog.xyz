@@ -1,6 +1,6 @@
 ---
 title: Hello Website
-date: 2021-07-10
+date: 2021\-07\-10
 ---
 
 # Hello website
