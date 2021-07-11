@@ -31,56 +31,60 @@ two 2TB hard drives in raid. This provides me some additional storage space that
 When it comes to software I try to mostly avoid proprietary crap (or isolate it in virtual machine and use it that way if really needed). The only bad exception, when I really need to use proprietary software is when I need to install
 Nvidia drivers, because Nvidia is a Apple of GPU manifacturers that hates free software. 
 
-![Linus from Linux Tech Tips showing his dissatisfaction with Nvidia](/res/linus_nvidia.webp)
+![Linus from Linux Tech Tips showing his dissatisfaction with Nvidia](/res/linus_nvidia.webp){ width=250px }
 **This man clearly has some critisism towards Nvidia**
 
-### Operating system
+### Basic software
+**Operating system**
 I use Void Linux, which is completely independent Linux distribution. Some reasons why I chose Void Linux in particular can be following: no systemd, very minimal installation, up to date packages and
 decent selection of packages in package manager. I have also used other distributions in the past such as Debian, Arch, Gentoo and even Ubuntu at some point. As much as I can tell, there is not much difference 
 between distros, other than the packages management system, init system and the amount of bloat that comes preinstalled with clean installation.
 
-### Window manager
+**Window manager**
 I use my own configuration of suckless's dwm alongside with my own configuration of dmenu. In addition I always set the GTK theme as Chicago95 for better visual compatibility with the status bar and GTK ui elements. I haven't really found any 
 good QT themes that would look uniform with Chicago95, but I don't really care either since I don't really use programs that use QT anyways. My dwm configuration can be found [here](https://github.com/inugami-dev64/dwm).
 
-### Terminal emulator
+**Terminal emulator**
 As for the terminal emulator of my choice, I chose suckless's st. It does all that it needs to do and it is quite customisable. My custom st build can be found at following [link](https://github.com/inugami-dev64/st).
 
-### Media player
-I use mpv for listening to music and consooming videos locally or from the internet using youtube-dl. Mpv is literally the best media player out there. It is quite lightweight (compared to vlc for example), it is extensible with userscripts,
-it has decent selection of commandline options and most importantly it is very keyboard friendly media player indeed.
-
-### Web browser
+**Web browser**
 I use Firefox ESR with hardened configuration, since I despise Chromium based browsers. That being said Firefox is still quite shit browser out of the box for the following reasons: the amount of telemetry it sends back home, useless features such as pocket, 
 Goolag as its default search engine, gimped down user interface, no adblocking by default, and the leftist agenda that Mozilla is propagating. However once the tweaking part is done it is quite a good browser. If the tweaking is too much I can recommend more
 sane fork of Firefox called [Librewolf](https://librewolf-community.gitlab.io/). It has all the same functionality as regular Firefox, but without telemetry, with more private search engine providers by default and with uBlock origin preinstalled.
 
-### Text editor
+**Text editor**
 I use Neovim for text editing, which is essentially just a community driven fork of Vim, which onto itself is a fork of old unix based text editor called Vi. Vim is a completely different world onto itself and its keybindings are really nice to use, once 
 you master the Vim wizardry. My init.vim (vimrc for Neovim) can be found [here](https://gist.githubusercontent.com/inugami-dev64/2be6af9deddbcb1d0f0febb2e2eaf274/raw/d9981e9aaa39ba77c801f5197d1aeab4d74e2221/.vimrc)
 
-### Mail client
-I use Thunderbird, since I am lazy and it just werks®. It's not great email client, since it is quite bloated by using Mozilla's gecko engine, but it is good enough for my purposes. If you'd like a CLI mail client use something like mutt instead.
 
-### PDF viewer
-For PDF viewer I use mupdf. It does what it is supposed to do, show the PDF file. That being said mupdf does not have many fancy features including printing capability, but that can be done using lpr anyways.
+### Multimedia
+**Media player**
+I use mpv for listening to music and consooming videos locally or from the internet using youtube-dl. Mpv is literally the best media player out there. It is quite lightweight (compared to vlc for example), it is extensible with userscripts,
+it has decent selection of commandline options and most importantly it is very keyboard friendly media player indeed.
 
-### Image viewer
+**Image viewer**
 I use feh for image viewing. It supports most of the image formats (except animated gifs) and can be used to set wallpapers for X11.
 
-### Image manipulation (read: meme manipulation program)
+**Image manipulation (read: meme manipulation program)**
 GIMP, it is decent enough.
 
-### Torrent client
+### Productivity and communication
+**Mail client**
+I use Thunderbird, since I am lazy and it just werks®. It's not great email client, since it is quite bloated by using Mozilla's gecko engine, but it is good enough for my purposes. If you'd like a CLI mail client use something like mutt instead.
+
+**PDF viewer**
+For PDF viewer I use mupdf. It does what it is supposed to do, show the PDF file. That being said mupdf does not have many fancy features including printing capability, but that can be done using lpr anyways.
+
+**Torrent client**
 For torrenting stuff, I use transmission-cli. It is probably the most basic bitch choice (along with qbittorrent), but it works and is not too bloated.
 
-### Typesetting
+**Typesetting**
 For typesetting I use LaTex because all cool kids use it, so I must as well. I like Latex, since it allows to create fancy mathematical equations, automatic paragraph numbering, automatic ToC generation and decent bibliography management. 
 Also Latex allows to create a correctly formated documents with ease. Which means that I can just focus on writing the document and not having to worry about formating (assuming that I have necessary template created).
 
-### Presentations
+**Presentations**
 Whenever I need to create a presentation I just write a Markdown file, then use pandoc to convert the markdown file into Latex using Beamer class and finally compile the Latex file into PDF. It is really easy to do and much better than having
 to use something like Libreoffice or even worse Google slides.
 
-### Spreadsheets
+**Spreadsheets**
 For spreadsheets, I use Libreoffice calc, because I have Libreoffice installed anyways for opening word documents, when needed.
