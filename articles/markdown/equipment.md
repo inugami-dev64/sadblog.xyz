@@ -9,20 +9,20 @@ date: 2021-07-11
 I built a desktop computer back in 2017. So far I have managed to upgrade it quite a bit and since I got sick from all the consoomerism, I do not plan to upgrade my desktop computer anytime soon.  
 The specs are following:  
 
-### Processor
+**Processor**
 I use AMD Ryzen 1600. I would say it is quite good CPU for my purposes. I might even consider this CPU as AMD's i5 2500k, in terms of its longetivity. That being said this CPU is still using x86 architecture,
 which is heavily compromised by glowniggers, by having essentially a built in [flawed backdoor](https://www.tomshardware.com/news/design-flaws-backdoors-amd-ryzen,36657.html), which not only could be used by glowniggers, 
 but also by random black-hat hackers, whenever a new exploit is found.
 
-### Graphics card
+**Graphics card**
 My desktop has not one, but two graphics cards. One is Nvidia GTX 1070TI and the other one is AMD Rx 480. The reason for two completely different graphics cards is actually quite simple. Since I sometimes setup virtual machines
 for different purposes, I'd like to have near native graphics performance. For this purpose I do PCI passthrough and in order to do PCI passthrough I must isolate secondary graphics card from the host machine completely. The secondary
 graphics card in my case being AMD Rx 480. For more information about isolating graphics card and setting up PCI passthrough for the vm, check out this Arch wiki [article](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF)  
 
-### Memory
+**Memory**
 I have a good amount of 32GB of memory (mainly because of my virtual machine autism).
 
-### Storage devices
+**Storage devices**
 For root file system I use a 500GB ssd, which I also use to contain EFI partition and swap space. I also have one 1TB hard drive, which has 90% of its storage capacity used most of the time. To combat this issue I also have
 two 2TB hard drives in raid. This provides me some additional storage space that is much needed in my case.
 
