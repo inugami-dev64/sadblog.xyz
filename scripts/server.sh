@@ -30,9 +30,12 @@ gen() {
         date=$(grep "date: " $(echo $f) | sed "s/^date: \(.*\)$/\1/g")
 
         LINKS="$LINKS<li>$date - <a href=\"$html\">$title<\/a><\/li>\n"
+        LINKS=$(echo -e $LINKS | sed -e "s/\./\\\ \./g")
+        LINKS=$(echo -e $LINKS | sed -e "s/ \./\./g")
     done
 
     # Write the link list to the index file
+    LINKS=$(echo -e $LINKS | sort -r -d)
     sed -e "s/#LIST/$LINKS/g" $1 > index.html
 }
 
@@ -40,10 +43,14 @@ gen() {
 while :; do
     pull=$(git pull origin master 2>/dev/null | grep "Already up to date")
 
-    #if [[ -z $pull ]]; then
-    check_template $1 $2
-    gen $1 $2
-    #fi
+    if [[ -z $pull ]]; then
+        check_template $1 $2
+        gen $1 $2
+    fi
 
     sleep 1m
 done
+
+<li>2021-07-11 - <a href="\/articles\/html\/equipment.html">Equipment and software I use<\/a><\/li>
+<li>2021-07-10 - <a href="\/articles\/html\/hello.html">Hello Website<\/a><\/li>
+
