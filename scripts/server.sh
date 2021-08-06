@@ -3,6 +3,14 @@
 IFS=""
 
 # Check if the template exists
+check_dst() {
+    if [ ! -d ./articles/html ]; then
+        echo "Creating static html directory"
+        mkdir ./articles/html
+    fi
+}
+
+
 check_template() {
     if [ -z $1 ]; then
         echo "Please specify the index.html template"
