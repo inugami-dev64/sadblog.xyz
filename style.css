@@ -40,6 +40,11 @@ h4 {
 }
 
 
+td {
+    color: white;
+}
+
+
 a, p, b {
     font-size: 18px;
 }
@@ -79,6 +84,33 @@ p, b, li {
     margin-top: 30px;
     display: block;
     width: 50%;
+}
+
+/* Centered universal divisor */
+.centered {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.centered table {
+    margin-top: 10px;
+    background-color: #d15400;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: auto;
+}
+
+
+.webpins {
+    margin: auto;
+    width: 90%;
+    max-width: 880px;
+    margin-top: 30px;
 }
 
 
