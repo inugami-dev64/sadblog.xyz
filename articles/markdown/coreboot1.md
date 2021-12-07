@@ -6,7 +6,7 @@ date: 2021\-12\-07
 # Hacking into Thinkpad T420 bios (corebooting part1)
 
 My friend recently gave me a T420 for cleaning and since I personally also own
-a T420 as well I asked him, if he would like to get it corebooted as well. He agreed on that. 
+a T420 as well I asked him, if he would like to get it corebooted. He agreed on that. 
 Once I recieved the Thinkpad it was in a quite rough condition: scratches on the screen, 
 awful anime stickers on it, nasty keyboard, broken plastics etc. 
 
