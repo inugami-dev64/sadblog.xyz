@@ -34,6 +34,7 @@ gen() {
         title=$(grep "title: " $(echo $f) | sed "s/^title: \(.*\)$/\1/g")
         date=$(grep "date: " $(echo $f) | sed "s/^date: \(.*\)$/\1/g")
 
+        html=$(echo $html | sed "s/articles\/html/blog/g")
         LINKS="$LINKS<li>$date - <a href=$html>$title</a></li>\\\n"
     done
 
@@ -48,6 +49,9 @@ while :; do
     pull=$(git pull origin master 2>/dev/null | grep "Already up to date")
 
     if [[ -n $pull ]]; then
+        rm index.html
+        git pull origin master
+        check_dst
         check_template $1 $2
         gen $1 $2
     fi
