@@ -3,7 +3,7 @@ title: Cleaning and hacking Thinkpad T420 bios (corebooting part1)
 date: 2021\-12\-07
 ---
 
-# Hacking into Thinkpad T420 bios (corebooting part2)
+# Hacking into Thinkpad T420 bios (corebooting part1)
 
 My friend recently gave me a T420 for cleaning and since I personally also own
 a T420, I asked him, if he would like to get it corebooted as well. He agreed on that. 

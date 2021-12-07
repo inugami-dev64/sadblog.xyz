@@ -95,3 +95,9 @@ p, b, li {
     height: auto;
     margin-bottom: 20px;
 }
+
+/* Auto generated html images styling */
+figure img {
+    max-width: 100%;
+    height: auto;
+}
