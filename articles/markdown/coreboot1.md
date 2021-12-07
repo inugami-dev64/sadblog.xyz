@@ -7,12 +7,12 @@ date: 2021\-12\-07
 
 My friend recently gave me a T420 for cleaning and since I personally also own
 a T420 as well I asked him, if he would like to get it corebooted as well. He agreed on that. 
-Once I recieved the Thinkpad it was in a quite rough condition: scratches on screen, 
+Once I recieved the Thinkpad it was in a quite rough condition: scratches on the screen, 
 awful anime stickers on it, nasty keyboard, broken plastics etc. 
 
 ![Stickered laptop](/res/coreboot/T420Before.jpg)
 
-Firstly I attempted to remove all stickers that I could get and after rubbing 
+Firstly I attempted to remove all the stickers that I could get and after rubbing 
 the back of the screen with some isopropyl alchohol for about 10 minutes, I 
 managed to clean off most of the sticker glue and other nastiness from it. The 
 result of this cleaning looks like this:
@@ -21,8 +21,8 @@ result of this cleaning looks like this:
 
 After some outer cleaning I attempted to proceed with the usual corebooting process.
 The first step of corebooting any machine is to update the vendor bios to the latest 
-version, since the original bios image is required for firmware blobs. After trying to
-access the bios, I was prompted with the following friendly screen:
+version, since the original bios image is required for extracting firmware blobs. 
+After trying to access the bios, I was prompted with the following friendly screen:
 
 ![Locked T420](/res/coreboot/BiosPass.jpg)
 
