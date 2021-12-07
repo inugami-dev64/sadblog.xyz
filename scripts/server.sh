@@ -1,4 +1,5 @@
-#!/bin/bash # The purpose of this script is to index all the specified articles
+#!/bin/bash 
+# The purpose of this script is to index all the specified articles
 IFS=""
 
 # Check if the template exists
@@ -43,6 +44,10 @@ gen() {
     sed -e "s|#LIST|$LINKS|g" $1 > index.html
 }
 
+mk_rss() {
+    awk '/#RSS/{system("pandoc-rss articles/markdown/*.md");next}1' articles/templates/rss.xml > rss.xml
+}
+
 
 while :; do
     pull=$(git pull origin master 2>/dev/null | grep "Already up to date")
@@ -51,6 +56,7 @@ while :; do
         check_dst
         check_template $1 $2
         gen $1 $2
+        mk_rss
     fi
 
     sleep 1m
