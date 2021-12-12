@@ -107,6 +107,15 @@ p, b, li {
 }
 
 
+/* Listing class for all articles */
+.list {
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+    overflow-wrap: break-word;
+}
+
+
 .webpins {
     margin: auto;
     display: flex;
