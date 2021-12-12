@@ -2,8 +2,9 @@
     <head>
         <title>Sad blog</title>
         <meta charset="UTF-8">
-        <link rel="icon" href="/logo.png">
-        <link rel="stylesheet" href="/style.css">
+        <base href="../../">
+        <link rel="icon" href="./logo.png">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <h1>Welcome to Sad blog!</h1>
@@ -21,24 +22,19 @@
                     </p>
                 </div>
                 <div class="col">
-                    <img src="/res/bear_lain.webp" alt="Iwakura Lain">
+                    <img src="./res/bear_lain.webp" alt="Iwakura Lain">
                     <b>We all love Lain, so I decided to use her as my blog mascot</b>
                 </div>
             </div>
         </div>
 
-
-        <div class="webpins">
-            <a href="/deng"><img src="/res/webpins/UseDeng.gif"></a>
-            <a href="/deng"><img src="/res/webpins/UseDeng.gif"></a>
-            <a href="/deng"><img src="/res/webpins/UseDeng.gif"></a>
-            <a href="/deng"><img src="/res/webpins/UseDeng.gif"></a>
-            <a href="/deng"><img src="/res/webpins/UseDeng.gif"></a>
-            <a href="/deng"><img src="/res/webpins/UseDeng.gif"></a>
-            <a href="/deng"><img src="/res/webpins/UseDeng.gif"></a>
-            <a href="/deng"><img src="/res/webpins/UseDeng.gif"></a>
-            <a href="/deng"><img src="/res/webpins/UseDeng.gif"></a>
-            <a href="/deng"><img src="/res/webpins/UseDeng.gif"></a>
+        
+        <!-- List of all terrible SOVLFVL webpins -->
+        <div class="info_box">
+            <h2>Some (awful) webpins</h2>
+            <div class="webpins">
+                <a href="deng.sadblog.xyz"><img src="./res/webpins/UseDeng.gif"></a>
+            </div>
         </div>
 
         <!-- List all hosted services on sadblog domain -->
@@ -46,20 +42,25 @@
             <h2>Services and projects</h2>
             <b>I host some services mainly for my own benefit and create some projects for fun</b>
 
-            <table class="list">
+            <table>
                 <tr>
-                    <td><img src="/res/favicon/searx.png"</td>
-                    <td><a href="/searx">Searx instance</a></td>
+                    <td><img src="./res/favicon/searx.png"</td>
+                    <td><a href="./searx">Searx instance</a></td>
                 </tr>
 
                 <tr>
-                    <td><img src="/res/favicon/rss.png"</td>
-                    <td><a href="/feed">RSS feed</a></td>
+                    <td><img src="./res/favicon/rss.png"</td>
+                    <td><a href="./feed">RSS feed</a></td>
                 </tr>
 
                 <tr>
-                    <td><img src="/res/favicon/deng.png"></td>
-                    <td><a href="/deng">DENG project</td>
+                    <td><img src="./res/favicon/deng.png"></td>
+                    <td><a href="https://deng.sadblog.xyz">DENG project</td>
+                </tr>
+
+                <tr>
+                    <td><img src="./res/favicon/git.png"></td>
+                    <td><a href="https://git.sadblog.xyz">Git repositories</td>
                 </tr>
             </table>
         </div>
@@ -71,6 +72,28 @@
                 <ul>
                 #LIST
                 </ul>
+            </div>
+        </div>
+
+        <!-- Donation section -->
+        <div class="info_box">
+            <h2>Cofe funding</h2>
+            <div class="sptable" style="width: 66%; min-width: 512px; justify-content: center;">
+                <div class="col" style="width: 33%; min-width: 256px; display: flex; flex-direction: column; align-items: center;">
+                    <h4>Monero</h4>
+                    <p class="crypto_addr">
+                        8AFhwbL8Qj5366xvth9nY4PtatkVAHhmLfdGrT4yY1idXGMTYujzi3x84erof2Bo5HXzyvXj2RzmDKpx2Mi1Kc4XC9g1cgE
+                    </p>
+                    <img style="width: 128px; height: auto;" src="./res/donation/monero.png" alt="monero_qr">
+                </div>
+
+                <div class="col" style="width: 33%; min-width: 256px; display: flex; flex-direction: column; align-items: center;">
+                    <h4>Bitcoin</h4>
+                    <p class="crypto_addr">
+                        bc1q4mhsgfczwxvkxn5lacu5um776thyry8g2mm3rf
+                    </p>
+                    <img style="width: 128px; height: auto;" src="./res/donation/bitcoin.png" alt="monero_qr">
+                </div>
             </div>
         </div>
     </body>

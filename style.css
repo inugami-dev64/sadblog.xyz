@@ -74,6 +74,7 @@ p, b, li {
 }
 
 .sptable {
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -98,19 +99,34 @@ p, b, li {
 
 .centered table {
     margin-top: 10px;
-    background-color: #d15400;
+    background-color: #993333;
     border: none;
     border-radius: 5px;
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
 
 .webpins {
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
     width: 90%;
     max-width: 880px;
+    height: auto;
     margin-top: 30px;
+}
+
+
+/* Class for cryptocurrency addresses */
+.crypto_addr {
+    color: #76FF76;
+    font-size: 10px;
+    width: 250px;
+    overflow-wrap: break-word;
 }
 
 
