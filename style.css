@@ -19,7 +19,7 @@ h2 {
     color: #1ed2ea;
     text-align: center;
     font-size: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 
@@ -67,11 +67,41 @@ p, b, li {
 
 
 /* Containers for creating fancy table like layouts */
-.info_box {
+.info_box{
     margin: 10px;
     margin-top: 100px;
     width: 100%;
 }
+
+
+.info_box p {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.info_box img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+.info_box .vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.info_box .horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
 
 .sptable {
     margin: auto;
@@ -87,17 +117,9 @@ p, b, li {
     width: 50%;
 }
 
-/* Centered universal divisor */
-.centered {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-
-.centered table {
+/* Table class for all possible services */
+.services {
     margin-top: 10px;
     background-color: #993333;
     border: none;
@@ -116,6 +138,7 @@ p, b, li {
 }
 
 
+/* Class for all webpins used on that website */
 .webpins {
     margin: auto;
     display: flex;
@@ -127,6 +150,13 @@ p, b, li {
     max-width: 880px;
     height: auto;
     margin-top: 30px;
+}
+
+
+.webpins img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 

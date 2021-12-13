@@ -2,6 +2,7 @@
     <head>
         <title>sadblog</title>
         <meta charset="UTF-8">
+        <base href="../..">
         <link rel="icon" href="./logo.png">
         <link rel="stylesheet" href="./style.css">
     </head>
@@ -10,58 +11,61 @@
 
         <!-- Information about the blog itself -->
         <div class="info_box">
-            <div class="sptable">
-                <div class="col">
-                    <h2>What is this blog about?</h2>
-                    <p>
-                    This blog is mainly used for sharing god's messages and revealing dirty little secrets about organisations, who normalfags
-                    are largely dependant on, but are inherently evil in their nature. With this blog I attempt to enlighten people about topics
-                    such as mass survailance, implicit and explicit dictatorships, disasterous consequenses of human knowledge, technology, 
-                    god's will and ultimatelly the final Armageddon.
-                    </p>
-                </div>
-                <div class="col">
-                    <img src="./res/bear_lain.webp" alt="Iwakura Lain">
-                    <b>We all love Lain, so I decided to use her as my blog mascot</b>
-                </div>
+            <div class="vertical">
+                <img src="./res/lain.png" alt="Iwakura Lain">
+                <b>Lain == god</b>
             </div>
+        </div>
+
+        <div class="info_box">
+            <h2>What is this blog about?</h2>
+            <p>
+                I decided to create a small personal website in this mess known as a ((((modern)))) web, so I did. Main topics that can be found here are following:
+                rantings about modern technology, corebooting and other fun stuff, programming in C++ and Python, analysing books that I've read, cryptocurrencies etc etc.
+            </p>
         </div>
 
         
         <!-- List of all terrible SOVLFVL webpins -->
         <div class="info_box">
-            <h2>Some (awful) webpins</h2>
-            <div class="webpins">
-                <a href="https://deng.sadblog.xyz"><img src="./res/webpins/UseDeng.gif"></a>
+            <div class="vertical">
+                <h2>Some (awful) webpins</h2>
+                <div class="webpins">
+                    <a href="https://deng.sadblog.xyz"><img src="./res/webpins/UseDeng.gif"></a>
+                </div>
             </div>
         </div>
 
+
         <!-- List all hosted services on sadblog domain -->
-        <div class="centered">
-            <h2>Services and projects</h2>
-            <b>I host some services mainly for my own benefit and create some projects for fun</b>
+        <div class="info_box">
+            <div class="vertical">
+                <h2>Services and projects</h2>
+                <b>I host some services mainly for my own benefit and create some projects for fun</b>
 
-            <table>
-                <tr>
-                    <td><img src="./res/favicon/searx.png"</td>
-                    <td><a href="./searx">Searx instance</a></td>
-                </tr>
+                <!-- Table of all services available under the domain -->
+                <table class="services">
+                    <tr>
+                        <td><img src="./res/favicon/searx.png"</td>
+                        <td><a href="./searx">Searx instance</a></td>
+                    </tr>
 
-                <tr>
-                    <td><img src="./res/favicon/rss.png"</td>
-                    <td><a href="./feed">RSS feed</a></td>
-                </tr>
+                    <tr>
+                        <td><img src="./res/favicon/rss.png"</td>
+                        <td><a href="./feed">RSS feed</a></td>
+                    </tr>
 
-                <tr>
-                    <td><img src="./res/favicon/deng.png"></td>
-                    <td><a href="https://deng.sadblog.xyz">DENG project</td>
-                </tr>
+                    <tr>
+                        <td><img src="./res/favicon/deng.png"></td>
+                        <td><a href="https://deng.sadblog.xyz">DENG project</td>
+                    </tr>
 
-                <tr>
-                    <td><img src="./res/favicon/git.png"></td>
-                    <td><a href="https://git.sadblog.xyz">Git repositories</td>
-                </tr>
-            </table>
+                    <tr>
+                        <td><img src="./res/favicon/git.png"></td>
+                        <td><a href="https://git.sadblog.xyz">Git repositories</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <!-- List of all articles available for public reading -->
@@ -80,7 +84,7 @@
             <div class="sptable" style="width: 66%; min-width: 512px; justify-content: center;">
                 <div class="col" style="width: 33%; min-width: 256px; display: flex; flex-direction: column; align-items: center;">
                     <h4>Monero</h4>
-                    <p class="crypto_addr">
+                    <p class="crypto_addr" style="height: 50px;">
                         8AFhwbL8Qj5366xvth9nY4PtatkVAHhmLfdGrT4yY1idXGMTYujzi3x84erof2Bo5HXzyvXj2RzmDKpx2Mi1Kc4XC9g1cgE
                     </p>
                     <img style="width: 128px; height: auto;" src="./res/donation/monero.png" alt="monero_qr">
@@ -88,7 +92,7 @@
 
                 <div class="col" style="width: 33%; min-width: 256px; display: flex; flex-direction: column; align-items: center;">
                     <h4>Bitcoin</h4>
-                    <p class="crypto_addr">
+                    <p class="crypto_addr" style="height: 50px;">
                         bc1q4mhsgfczwxvkxn5lacu5um776thyry8g2mm3rf
                     </p>
                     <img style="width: 128px; height: auto;" src="./res/donation/bitcoin.png" alt="monero_qr">
