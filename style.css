@@ -88,7 +88,7 @@ p, b, li {
 
 
 .info_box figure img {
-    width: 100%;
+    max-width: 100%;
 }
 
 
