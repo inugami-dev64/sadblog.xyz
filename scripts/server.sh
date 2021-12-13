@@ -35,12 +35,11 @@ gen() {
         date=$(grep "date: " $(echo $f) | sed "s/^date: \(.*\)$/\1/g")
 
         html=$(echo $html | sed "s/articles\/html/blog/g")
-        LINKS="$LINKS<li>$date - <a href=$html>$title</a></li>\\\n"
+        LINKS="$LINKS<li>$date - <a href=$html>$title</a></li>\0"
     done
 
     # Write the link list to the index file
-    LINKS=$(echo -e $LINKS | sort -r -d)
-    echo -e $LINKS
+    LINKS=$(echo -e $LINKS | sort -r -d -z)
     sed -e "s|#LIST|$LINKS|g" $1 > index.html
 }
 
