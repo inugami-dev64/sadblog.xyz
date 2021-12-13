@@ -1,6 +1,6 @@
 ---
 title: Cleaning and hacking Thinkpad T420 bios (corebooting part 1)
-date: 2021\-12\-07
+date: 2021-12-07
 ---
 
 # Cleaning and hacking into Thinkpad T420 bios (corebooting part 1)

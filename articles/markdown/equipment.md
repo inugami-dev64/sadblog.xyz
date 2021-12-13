@@ -1,6 +1,6 @@
 ---
 title: Equipment and software I use
-date: 2021\-07\-11
+date: 2021-07-11
 ---
 
 # Equipment and software I use
