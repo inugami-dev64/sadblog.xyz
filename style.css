@@ -81,9 +81,14 @@ p, b, li {
 }
 
 
-.info_box img {
+.info_box img, figure {
     max-width: 80%;
     height: auto;
+}
+
+
+.info_box figure img {
+    width: 100%;
 }
 
 
@@ -91,6 +96,7 @@ p, b, li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
