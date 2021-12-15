@@ -91,6 +91,7 @@ p, b, li, code, figcaption {
     align-items: center;
     max-width: 80%;
     height: auto;
+    margin: 0 auto;
 }
 
 

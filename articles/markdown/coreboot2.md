@@ -182,5 +182,5 @@ If no errors were present, you can reassemble the laptop and power it on. The re
 
 
 # More information about Corebooting
-* [](https://www.coreboot.org/Board:lenovo/t420)
-* [](https://www.coreboot.org/Build_HOWTO)
+* [Thinkpad T420 coreboot article](https://www.coreboot.org/Board:lenovo/t420)
+* [Coreboot build howto](https://www.coreboot.org/Build_HOWTO)
