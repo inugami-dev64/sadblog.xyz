@@ -62,7 +62,7 @@ a:hover {
 }
 
 
-p, b, li {
+p, b, li, code, figcaption {
     color: #ffffff;
 }
 
@@ -75,21 +75,29 @@ p, b, li {
 }
 
 
-.info_box p {
-    text-align: center;
-    margin: 0 auto;
+.info_box p, figcaption {
     width: 80%;
 }
 
 
+.info_box figcaption {
+    text-align: center;
+}
+
+
 .info_box img, figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 80%;
     height: auto;
 }
 
 
 .info_box figure img {
+    margin: auto;
     max-width: 100%;
+    height: auto;
 }
 
 
@@ -188,9 +196,4 @@ p, b, li {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-}
-
-/* Auto generated html images styling */
-figure img {
-    max-width: 100%;
 }

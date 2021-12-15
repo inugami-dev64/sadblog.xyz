@@ -179,3 +179,8 @@ $ sudo /sbin/flashrom -p ch431a_spi -w coreboot.rom
 If no errors were present, you can reassemble the laptop and power it on. The result will be magnificent!
 
 ![](/res/coreboot/WorkingBootsplash.png)
+
+
+# More information about Corebooting
+* [](https://www.coreboot.org/Board:lenovo/t420)
+* [](https://www.coreboot.org/Build_HOWTO)
