@@ -151,7 +151,7 @@ apt install build-essential gnat flex bison libncurse5-dev wget zlib1g-dev iasl
 
 
 Once you have installed those prerequisites navigate to Coreboot root directory and run `make nconfig`. From here on you can customise the Coreboot
-to fill your needs. Make sure that the board is `Lenovo T420` and `Use CMOS for configuration values` is used and CBFS filesystem size should be set to 3MB 
+to fill your needs. Make sure that the board is `Lenovo T420`, `Use CMOS for configuration values` is used and CBFS filesystem size should be set to 3MB 
 (0x300000). Navigate to `Chipset` and verify that `Add Intel descriptor.bin file`, `Add Intel ME/TXE firmware` and `Add gigabit ethernet configuration` paths
 are set correctly to your extracted firmware blobs. For payload I used default `SeaBIOS`. Additionally if you want to use a custom bootsplash, add the correct 
 vbios rom path to `Devices -> Add a VGA BIOS image`. Bootsplash image path can be specified in `General setup -> Add a bootsplash image`. Supported formats
@@ -163,7 +163,7 @@ $ make crossgcc CPUS=<n>
 ```
 
 This compilation takes a looong time (on my T420 it took about 2 - 3 hours), so grab yourself a cup of coffee and something to eat while it is compiling. After 
-the toolchain is build you can compile the Coreboot rom using following command:
+the toolchain is built you can compile the Coreboot rom using following command:
 
 ```
 $ make -j<n>
@@ -173,7 +173,7 @@ This shouldn't take long and once it is complete, you should find `coreboot.rom`
 Coreboot rom using following command:
 
 ```
-$ sudo /sbin/flashrom -p ch431a_spi -w coreboot.rom
+$ sudo /sbin/flashrom -p ch341a_spi -w coreboot.rom
 ```
 
 If no errors were present, you can reassemble the laptop and power it on. The result will be magnificent!
