@@ -148,6 +148,9 @@ p, b, li, code, figcaption {
 
 /* Listing class for all articles */
 .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: auto;
     width: 80%;
     max-width: 800px;
