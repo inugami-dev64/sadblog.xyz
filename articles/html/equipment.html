@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Equipment and software I use</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="/logo.png">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <a href="/">Back to blog list</a> 
+        <!-- Information box itself -->
+        <div class="info_box">
+            <div class="vertical">
+<h1 id="equipment-and-software-i-use">Equipment and software I use</h1>
+<h2 id="hardware">Hardware</h2>
+<p>I built a desktop computer back in 2017. So far I have managed to upgrade it quite a bit and since I got sick from all the consoomerism, I do not plan to upgrade my computer anytime soon.<br />
+The specs are following:</p>
+<p><strong>Processor</strong><br />
+I use AMD Ryzen 1600. I would say it is quite good CPU for my purposes. I might even consider this CPU as AMD’s version of i5 2500k, in terms of its longetivity and useability. That being said this CPU is still using x86 architecture, which is heavily compromised by glowniggers, by having essentially a built in <a href="https://www.tomshardware.com/news/design-flaws-backdoors-amd-ryzen,36657.html">backdoor</a>, which not only could be used by glowniggers, but also by random black-hat hackers, whenever a new exploit is found.</p>
+<p><strong>Graphics card</strong><br />
+My desktop has not one, but two graphics cards. One is Nvidia GTX 1070TI and the other one is AMD Rx 480. The reason for two completely different graphics cards is actually quite simple. Since I sometimes setup virtual machines for different purposes, I’d like to have near native graphics performance in my guest operating systems. For this purpose I do PCI passthrough and in order to do PCI passthrough I must isolate secondary graphics card from the host machine completely. The secondary graphics card in my case is AMD Rx 480.<br />
+For more information about isolating graphics card and setting up PCI passthrough for the vm, check out this Arch wiki <a href="https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF">article</a></p>
+<p><strong>Memory</strong><br />
+I have a good amount of 32GB of memory (mainly because of my virtual machine autism).</p>
+<p><strong>Storage devices</strong><br />
+For root file system I use a 500GB ssd, which I also use to store EFI and swap partitions. I also have one 1TB hard drive, which has 90% of its storage capacity used. To combat this issue I also have two 2TB hard drives in raid. This provides me some additional storage space that is much needed in my case.</p>
+<h2 id="software">Software</h2>
+<p>When it comes to software I try to mostly avoid proprietary crap (or isolate it in virtual machine and use it that way if really needed). The only bad exception, when I really need to use proprietary software is when I need to install Nvidia drivers, because Nvidia is a cunt and hates free software.</p>
+<p><img src="/res/linus_nvidia.webp" style="width: 300px; margin: auto;" alt="Linus from Linux Tech Tips showing his dissatisfaction with Nvidia" /><br />
+<strong>This man clearly has some critisism towards Nvidia</strong></p>
+<h3 id="basic-software">Basic software</h3>
+<p><strong>Operating system</strong><br />
+I use Void Linux, which is completely independent Linux distribution. Polfag memes aside it is actually quite good distribution for following reasons: no systemd, very minimal installation, up to date packages and decent selection of packages in package manager. I have also used other distributions in the past such as Debian, Arch, Gentoo and even Ubuntu at some point. As much as I can tell, there is not much difference between distros, other than the package management system, init system and the amount of bloat that comes preinstalled with clean installation.</p>
+<p><strong>Window manager</strong><br />
+I use my own configuration of suckless’s dwm alongside with my own configuration of dmenu. In addition I always set the GTK theme as Chicago95 for better visual compatibility with the status bar and GTK ui. I haven’t really found any good QT themes that would look uniform with Chicago95, but I don’t really care either since I don’t really use programs that use QT anyway.<br />
+My dwm configuration can be found <a href="https://github.com/inugami-dev64/dwm">here</a> and dmenu configuration can be found <a href="https://github.com/inugami-dev64/dmenu">here</a></p>
+<p><strong>Terminal emulator</strong><br />
+As for the terminal emulator I use suckless’s st. It does all that it needs to do, it is lightweight and it is quite customisable. My custom st build can be found at following <a href="https://github.com/inugami-dev64/st">link</a>.</p>
+<p><strong>Web browser</strong><br />
+I use Firefox ESR with hardened configuration, since I despise Chromium based browsers. That being said Firefox is still quite shit browser out of the box for the following reasons: the amount of telemetry it sends back home, useless features such as pocket, Goolag as its default search engine, gimped down user interface, no adblocking by default, and the leftist agenda that Mozilla is propagating. However once the tweaking part is done it is quite a good browser. If the tweaking is too much I can recommend more sane fork of Firefox called <a href="https://librewolf-community.gitlab.io/">Librewolf</a>. It has all the same functionality as regular Firefox, but without telemetry, with more private search engine providers by default and with uBlock origin preinstalled.</p>
+<h3 id="utilities">Utilities</h3>
+<p><strong>Text editor</strong><br />
+I use Neovim for text editing, which is essentially just a community driven fork of Vim, which onto itself is a fork of old unix based text editor called Vi. Vim is a completely different world onto itself and its keybindings are really nice to use, once you master the Vim wizardry. My init.vim (vimrc for Neovim) can be found <a href="https://gist.githubusercontent.com/inugami-dev64/2be6af9deddbcb1d0f0febb2e2eaf274/raw/d9981e9aaa39ba77c801f5197d1aeab4d74e2221/.vimrc">here</a></p>
+<p><strong>File manager</strong> For the file manager I use vifm and / or just terminal. Vifm is a great terminal file manager, which can be extended to even show image previews using Überzug! That being said the only reason for me to ever use file manager is when I need to find a specific image from my badly organised image directory with timestamps as image file names.</p>
+<p><strong>3D Modelling</strong> I use Blender for 3D modelling. However I am still quite novice at using it.</p>
+<h3 id="multimedia">Multimedia</h3>
+<p><strong>Media player</strong><br />
+I use mpv for listening to music and consooming videos locally or from the internet using youtube-dl. Mpv is literally the best media player out there. It is quite lightweight (compared to vlc for example), it is extensible with userscripts, it has decent selection of commandline options and most importantly it is very keyboard friendly media player.</p>
+<p><strong>Image viewer</strong><br />
+I use feh for image viewing. It supports most of the image formats (except animated gifs), is quite small and can be used to set wallpapers for X11.</p>
+<p><strong>Image manipulation (read: meme manipulation program)</strong><br />
+GIMP, it is decent enough.</p>
+<h3 id="productivity-and-communication">Productivity and communication</h3>
+<p><strong>Mail client</strong><br />
+I use Thunderbird, since I am lazy and it just werks®. It’s not great email client, since it is quite bloated by using Mozilla’s gecko engine, but it is good enough for my purposes. If you’d like a CLI mail client use something like mutt instead.</p>
+<p><strong>PDF viewer</strong><br />
+For PDF viewer I use mupdf. It does what it is supposed to do, show the PDF file. That being said mupdf does not have many fancy features including printing capability, but that can be done using lpr anyways.</p>
+<p><strong>Torrent client</strong><br />
+For torrenting stuff, I use transmission-cli. It is probably the most basic bitch choice (along with qbittorrent), but it works and is not too bloated.</p>
+<p><strong>Typesetting</strong><br />
+For typesetting I use LaTex because all cool kids use it, so I must as well. I like Latex, since it allows to create fancy mathematical equations, automatic paragraph numbering, automatic ToC generation and decent bibliography management. Also Latex allows to create a correctly formated documents with ease. Which means that I can just focus on writing the document and not having to worry about formating (assuming that I have necessary template created).</p>
+<p><strong>Presentations</strong><br />
+Whenever I need to create a presentation I just write a Markdown file, then use pandoc to convert the markdown file into Latex using Beamer class and finally compile the Latex file into PDF. It is really easy to do and much better than having to use something like Libreoffice or even worse Google slides.</p>
+<p><strong>Spreadsheets</strong><br />
+For spreadsheets, I use Libreoffice calc, because I have Libreoffice installed anyways for opening word documents, when needed.</p>
+            </div>
+        </div>
+    </body>
+</html>
