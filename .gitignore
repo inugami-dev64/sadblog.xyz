@@ -4,3 +4,4 @@
 /articles/html/*
 tmp/*
 !/templates/*.html
+tags
