@@ -32,8 +32,7 @@ two 2TB hard drives in raid. This provides me some additional storage space that
 When it comes to software I try to mostly avoid proprietary software (or isolate it in virtual machine and use it that way if really needed). The only bad exception, when I really need to use proprietary software is when I need to install
 Nvidia drivers, because Nvidia is a capitalist pig that hates free software. 
 
-![Linus from Linux Tech Tips showing his dissatisfaction with Nvidia](/res/linus_nvidia.webp)
-**This man clearly has some critisism towards Nvidia**  
+![Linus from Linux Tech Tips showing his dissatisfaction with Nvidia](/res/linus_nvidia.png)
 
 ### Basic software
 **Operating system**  
