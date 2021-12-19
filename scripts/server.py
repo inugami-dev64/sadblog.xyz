@@ -141,29 +141,32 @@ def find_md_diffs():
     return output
 
 
-# Main server process loop
-while True:
-    # Attempt to perform git pull
-    pull = subprocess.check_output("git pull origin master", shell=True)
+# Generate all static content from given files
+def generate_all(files):
+    # Check if all argument is provided 
+    print("Generating new html files")
+    check_dst()
+    generate_pages(files)
+    md_files = update_html()
+    generate_rss(md_files)
+    print("Done generating html files and rss feed")
 
-    if pull.decode("utf-8") != GIT_PULL_UP_TO_DATE_MSG:
-        # Check if all argument is provided 
-        print("Generating new html files")
-        check_dst()
 
-        files = []
-        # Generate all sites
-        if len(sys.argv) == 2 and sys.argv[1] == "all":
-            for f in os.listdir(MARKDOWN_PATH):
-                files.append(MARKDOWN_PATH + f)
 
-        # Generate sites for markdown diffs
-        else:
-            files = find_md_diffs()
 
-        generate_pages(files)
-        md_files = update_html()
-        generate_rss(md_files)
-        print("Done generating html files and rss feed")
+# Generate all sites
+if len(sys.argv) == 2 and sys.argv[1] == "all":
+    files = []
+    for f in os.listdir(MARKDOWN_PATH):
+        files.append(MARKDOWN_PATH + f)
+    generate_all(files)
 
-    time.sleep(SLEEP_INTERVAL)
+else:
+    while True:
+        # Attempt to perform git pull
+        pull = subprocess.check_output("git pull origin master", shell=True)
+
+        if pull.decode("utf-8") != GIT_PULL_UP_TO_DATE_MSG:
+            generate_all(find_md_diffs())
+
+        time.sleep(SLEEP_INTERVAL)
