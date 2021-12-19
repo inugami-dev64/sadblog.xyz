@@ -1,5 +1,6 @@
 #!/bin/python3
 import os
+import sys
 import time
 import subprocess
 
@@ -19,7 +20,7 @@ GIT_PULL_UP_TO_DATE_MSG = "Already up to date.\n"
 
 # Check if directory is created for article html
 def check_dst():
-    if not os.is_dir(HTML_PATH):
+    if not os.path.isdir(HTML_PATH):
         print("Creating a directory for static html files")
         os.mkdir(HTML_PATH)
 
@@ -145,9 +146,22 @@ while True:
     # Attempt to perform git pull
     pull = subprocess.check_output("git pull origin master", shell=True)
 
-    if pull.decode("utf-8") != GIT_PULL_UP_TO_DATE_MSG:
+    if pull.decode("utf-8") == GIT_PULL_UP_TO_DATE_MSG:
+        # Check if all argument is provided 
         print("Generating new html files")
-        generate_pages(find_md_diffs())
+        check_dst()
+
+        files = []
+        # Generate all sites
+        if len(sys.argv) == 2 and sys.argv[1] == "all":
+            for f in os.listdir(MARKDOWN_PATH):
+                files.append(MARKDOWN_PATH + f)
+
+        # Generate sites for markdown diffs
+        else:
+            files = find_md_diffs()
+
+        generate_pages(files)
         md_files = update_html()
         generate_rss(md_files)
         print("Done generating html files and rss feed")
