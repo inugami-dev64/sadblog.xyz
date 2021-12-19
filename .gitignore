@@ -1,5 +1,6 @@
 /index.html
 /blog.html
 /rss.xml
-articles/html/*
+/articles/html/*
 tmp/*
+!/templates/*.html
