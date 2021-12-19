@@ -11,13 +11,13 @@ The specs are following:
 
 **Processor**  
 I use AMD Ryzen 1600. I would say it is quite good CPU for my purposes. I might even consider this CPU as AMD's version of i5 2500k, in terms of its longetivity and useability. That being said this CPU is still using x86 architecture,
-which is heavily compromised by glowies, by having essentially a built in [backdoor](https://www.tomshardware.com/news/design-flaws-backdoors-amd-ryzen,36657.html), which not only could be used by glowniggers, 
+which is heavily compromised by glowies, by having essentially a built in [backdoor](https://www.tomshardware.com/news/design-flaws-backdoors-amd-ryzen,36657.html), which not only could be used by glowies, 
 but also by random black-hat hackers, whenever a new exploit is found.
 
 **Graphics card**  
-My desktop has not one, but two graphics cards. One is Nvidia GTX 1070TI and the other one is AMD RX 480. The reason for two completely different graphics cards is actually quite simple. Since I sometimes setup virtual machines
+My desktop has not one, but two graphics cards. One is Nvidia GTX 1070ti and the other one is AMD RX 480. The reason for two completely different graphics cards is actually quite simple. Since I sometimes setup virtual machines
 for different purposes, I'd like to have near native graphics performance in my guest operating systems. For this purpose I do PCI passthrough and in order to do PCI passthrough I must isolate secondary graphics card from the host 
-machine completely. The secondary graphics card in my case is AMD Rx 481.  
+machine completely. The secondary graphics card in my case is AMD RX 480.  
 For more information about isolating graphics card and setting up PCI passthrough for the vm, check out this Arch wiki [article](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF)  
 
 **Memory**  
@@ -30,13 +30,14 @@ two 2TB hard drives in raid. This provides me some additional storage space that
 
 ## Software
 When it comes to software I try to mostly avoid proprietary software (or isolate it in virtual machine and use it that way if really needed). The only bad exception, when I really need to use proprietary software is when I need to install
-Nvidia drivers, because Nvidia is a capitalist pig that hates free software. 
+Nvidia drivers, because Nvidia as a company is a capitalist pig that hates free software. 
 
-![Linus from Linux Tech Tips showing his dissatisfaction with Nvidia](/res/linus_nvidia.png)
+![Linus from Linus Tech Tips showing his dissatisfaction with Nvidia](/res/linus_nvidia.png)
 
 ### Basic software
+
 **Operating system**  
-I use Debian Linux on my desktop and Arch btw linux on my laptop. Reason being that Debian and Arch are the most popular distros that just work and don't have too much bloat preinstalled. 
+I use Debian Linux on my desktop and Arch btw linux on my laptops. The reason being that Debian and Arch are the most popular distros that just work and don't have too much bloat preinstalled. 
 I have also used other distributions in the past such as Void linux, Gentoo and even Ubuntu at some point. As much as I can tell, there is not much difference 
 between distros, other than the package management system, init system and the amount of bloat that comes preinstalled with clean installation.
 
