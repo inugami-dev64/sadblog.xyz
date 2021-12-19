@@ -8,7 +8,7 @@ check after every 60 seconds for any changes in the remote repository and if nee
 
 You will need to make sure following prerequisites are installed:  
 * [pandoc-rss](https://github.com/chambln/pandoc-rss)
-* pandoc itself
+* pandoc
 * git (obviously)
 * some kind of webserver (Nginx or Apache)
 
