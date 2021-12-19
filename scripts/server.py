@@ -145,7 +145,7 @@ while True:
     # Attempt to perform git pull
     pull = subprocess.check_output("git pull origin master", shell=True)
 
-    if pull.decode("utf-8") == GIT_PULL_UP_TO_DATE_MSG:
+    if pull.decode("utf-8") != GIT_PULL_UP_TO_DATE_MSG:
         print("Generating new html files")
         generate_pages(find_md_diffs())
         md_files = update_html()
