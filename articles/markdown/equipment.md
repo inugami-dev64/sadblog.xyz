@@ -11,13 +11,13 @@ The specs are following:
 
 **Processor**  
 I use AMD Ryzen 1600. I would say it is quite good CPU for my purposes. I might even consider this CPU as AMD's version of i5 2500k, in terms of its longetivity and useability. That being said this CPU is still using x86 architecture,
-which is heavily compromised by glowniggers, by having essentially a built in [backdoor](https://www.tomshardware.com/news/design-flaws-backdoors-amd-ryzen,36657.html), which not only could be used by glowniggers, 
+which is heavily compromised by glowies, by having essentially a built in [backdoor](https://www.tomshardware.com/news/design-flaws-backdoors-amd-ryzen,36657.html), which not only could be used by glowniggers, 
 but also by random black-hat hackers, whenever a new exploit is found.
 
 **Graphics card**  
-My desktop has not one, but two graphics cards. One is Nvidia GTX 1070TI and the other one is AMD Rx 480. The reason for two completely different graphics cards is actually quite simple. Since I sometimes setup virtual machines
+My desktop has not one, but two graphics cards. One is Nvidia GTX 1070TI and the other one is AMD RX 480. The reason for two completely different graphics cards is actually quite simple. Since I sometimes setup virtual machines
 for different purposes, I'd like to have near native graphics performance in my guest operating systems. For this purpose I do PCI passthrough and in order to do PCI passthrough I must isolate secondary graphics card from the host 
-machine completely. The secondary graphics card in my case is AMD Rx 480.  
+machine completely. The secondary graphics card in my case is AMD Rx 481.  
 For more information about isolating graphics card and setting up PCI passthrough for the vm, check out this Arch wiki [article](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF)  
 
 **Memory**  
@@ -29,28 +29,28 @@ two 2TB hard drives in raid. This provides me some additional storage space that
 
 
 ## Software
-When it comes to software I try to mostly avoid proprietary crap (or isolate it in virtual machine and use it that way if really needed). The only bad exception, when I really need to use proprietary software is when I need to install
-Nvidia drivers, because Nvidia is a cunt and hates free software. 
+When it comes to software I try to mostly avoid proprietary software (or isolate it in virtual machine and use it that way if really needed). The only bad exception, when I really need to use proprietary software is when I need to install
+Nvidia drivers, because Nvidia is a capitalist pig that hates free software. 
 
-![Linus from Linux Tech Tips showing his dissatisfaction with Nvidia](/res/linus_nvidia.webp){ style="width: 300px; margin: auto;" }  
+![Linus from Linux Tech Tips showing his dissatisfaction with Nvidia](/res/linus_nvidia.webp)
 **This man clearly has some critisism towards Nvidia**  
 
 ### Basic software
 **Operating system**  
-I use Void Linux, which is completely independent Linux distribution. Polfag memes aside it is actually quite good distribution for following reasons: no systemd, very minimal installation, up to date packages and
-decent selection of packages in package manager. I have also used other distributions in the past such as Debian, Arch, Gentoo and even Ubuntu at some point. As much as I can tell, there is not much difference 
+I use Debian Linux on my desktop and Arch btw linux on my laptop. Reason being that Debian and Arch are the most popular distros that just work and don't have too much bloat preinstalled. 
+I have also used other distributions in the past such as Void linux, Gentoo and even Ubuntu at some point. As much as I can tell, there is not much difference 
 between distros, other than the package management system, init system and the amount of bloat that comes preinstalled with clean installation.
 
 **Window manager**  
 I use my own configuration of suckless's dwm alongside with my own configuration of dmenu. In addition I always set the GTK theme as Chicago95 for better visual compatibility with the status bar and GTK ui. I haven't really found any 
 good QT themes that would look uniform with Chicago95, but I don't really care either since I don't really use programs that use QT anyway.  
-My dwm configuration can be found [here](https://github.com/inugami-dev64/dwm) and dmenu configuration can be found [here](https://github.com/inugami-dev64/dmenu)  
+My dwm configuration can be found [here](https://git.sadblog.xyz/dwm) and dmenu configuration can be found [here](https://git.sadblog.xyz/dmenu)  
 
 **Terminal emulator**  
-As for the terminal emulator I use suckless's st. It does all that it needs to do, it is lightweight and it is quite customisable. My custom st build can be found at following [link](https://github.com/inugami-dev64/st).
+As for the terminal emulator I use suckless's st. It does all that it needs to do, it is lightweight and it is quite customisable. My custom st build can be found at following [link](https://git.sadblog.xyz/st).
 
 **Web browser**  
-I use Firefox ESR with hardened configuration, since I despise Chromium based browsers. That being said Firefox is still quite shit browser out of the box for the following reasons: the amount of telemetry it sends back home, useless features such as pocket, 
+I use Firefox ESR with hardened configuration, since I despise Chromium based browsers. That being said Firefox is still quite bad browser out of the box for the following reasons: the amount of telemetry it sends back home, useless features such as pocket, 
 Goolag as its default search engine, gimped down user interface, no adblocking by default, and the leftist agenda that Mozilla is propagating. However once the tweaking part is done it is quite a good browser. If the tweaking is too much I can recommend more
 sane fork of Firefox called [Librewolf](https://librewolf-community.gitlab.io/). It has all the same functionality as regular Firefox, but without telemetry, with more private search engine providers by default and with uBlock origin preinstalled.
 
@@ -58,7 +58,7 @@ sane fork of Firefox called [Librewolf](https://librewolf-community.gitlab.io/).
 ### Utilities
 **Text editor**  
 I use Neovim for text editing, which is essentially just a community driven fork of Vim, which onto itself is a fork of old unix based text editor called Vi. Vim is a completely different world onto itself and its keybindings are really nice to use, once 
-you master the Vim wizardry. My init.vim (vimrc for Neovim) can be found [here](https://gist.githubusercontent.com/inugami-dev64/2be6af9deddbcb1d0f0febb2e2eaf274/raw/d9981e9aaa39ba77c801f5197d1aeab4d74e2221/.vimrc)
+you master the Vim wizardry. My init.vim (vimrc for Neovim) can be found [here](https://git.sadblog.xyz/dotfiles/tree/.config/nvim/init.vim)
 
 **File manager**
 For the file manager I use vifm and / or just terminal. Vifm is a great terminal file manager, which can be extended to even show image previews using Überzug! That being said the only reason for me to ever use file manager is when I need to find a 
@@ -70,7 +70,7 @@ I use Blender for 3D modelling. However I am still quite novice at using it.
 
 ### Multimedia
 **Media player**  
-I use mpv for listening to music and consooming videos locally or from the internet using youtube-dl. Mpv is literally the best media player out there. It is quite lightweight (compared to vlc for example), it is extensible with userscripts,
+I use mpv for listening to music and consooming videos locally or from the internet using youtube-dl. MPV is literally the best media player out there. It is quite lightweight (compared to vlc for example), it is extensible with userscripts,
 it has decent selection of commandline options and most importantly it is very keyboard friendly media player.
 
 **Image viewer**  
