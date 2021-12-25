@@ -71,7 +71,7 @@ Once the opposition is completely angered out, major unrests can be expected. Th
 sometimes even crackdowned violently. This can result even more serious civil unrests and even more sharp conflicts between oppositioners
 and establishment supporters. 
 
-![Covid-19 riots in the Netherlands are another examples of sharp conflicts between oppositioners and the establishment](videos/netherlands.webm)
+![Covid-19 riots in the Netherlands are another examples of sharp conflicts between oppositioners and the establishment](/videos/netherlands.webm)
 
 This kind of crackdown creates more confidence among the establishment supporters, which onto itself allows for even larger control
 for the establishment. However once the opposition dies, the personal freedoms of each person will also be jeopardised.
