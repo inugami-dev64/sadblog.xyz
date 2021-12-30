@@ -7,7 +7,7 @@
         <link rel="icon" href="./logo.png">
         <link rel="stylesheet" href="./style.css">
     </head>
-    <body onclick="playLullaby()">
+    <body>
         <h1>Welcome to Sad blog!</h1>
 
         <!-- Information about the blog itself -->
@@ -113,17 +113,5 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            // credits: https://www.youtube.com/watch?v=rLiyFaLs8PY
-            const track = new Audio('res/music/lullaby.mp3');
-            track.loop = true;
-
-            function playLullaby() { 
-                if(track.currentTime == 0)  {
-                    track.play(); 
-                }
-            }
-        </script>
     </body>
 </html>
