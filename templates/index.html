@@ -116,13 +116,11 @@
 
         <script>
             // credits: https://www.youtube.com/watch?v=rLiyFaLs8PY
-            const track = new Audio('res/lullaby.mp3');
+            const track = new Audio('res/music/lullaby.mp3');
             track.loop = true;
 
             function playLullaby() { 
-                console.log(track.currentTime);
                 if(track.currentTime == 0)  {
-                    console.log("Playing lullaby");
                     track.play(); 
                 }
             }
